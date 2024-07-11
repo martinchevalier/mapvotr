@@ -19,7 +19,7 @@ epsg_from_cog <- function(cog) {
   proj_mart <- 5490
   proj_guad <- proj_mart
   proj_guya <- 2972
-
+  proj_mayo <- 4471
 
   if (!stringr::str_detect(cog, "^97")) {
     proj_lambert93
@@ -31,6 +31,8 @@ epsg_from_cog <- function(cog) {
     proj_guya
   } else if (stringr::str_detect(cog, "^974")) {
     proj_reun
+  } else if (stringr::str_detect(cog, "^976")) {
+    proj_mayo
   } else {
     stop("unvalide cog")
   }
