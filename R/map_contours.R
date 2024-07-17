@@ -55,16 +55,7 @@ map_contours <- function(cog, sfelecteurs, contours_bv,
     leaflet::addProviderTiles(providers$Esri.WorldImagery, group = "Satellite") %>%
     leaflet::addProviderTiles(providers$GeoportailFrance.orthos, group = "Satellite2") %>%
     leaflet::addProviderTiles(providers$CartoDB.Positron, group = "Clair") %>%
-    leaflet::addProviderTiles(providers$Stamen.TonerLite, group = "Toner Lite") %>%
-    # leaflet::addPolygons(
-    #   data = voronoi_com,
-    #   weight = 2,
-    #   color = "black",
-    #   fillColor = ~ pal(code_bv),
-    #   fillOpacity = 0.8,
-    #   label =  ~ htmlEscape(paste("Code bv retenu :", code_bv)),
-    #   group = "voronoi"
-    # ) %>%
+    # leaflet::addProviderTiles(providers$Stamen.TonerLite, group = "Toner Lite") %>% # bug
     leaflet::addPolygons(
       data = contours_bv,
       weight = 2,
@@ -100,8 +91,8 @@ map_contours <- function(cog, sfelecteurs, contours_bv,
         "Clair",
         "OSM (default)",
         "Satellite",
-        "Satellite2",
-        "Toner Lite"
+        "Satellite2"
+        # "Toner Lite" bug
       )
     ) %>%
     hideGroup("electeurs") # on cache les électeurs par défaut

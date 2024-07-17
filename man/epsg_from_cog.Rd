@@ -16,6 +16,6 @@ epsg code
 Guess epsg code using city code (choosing between metropolitan France and overseas territories)
 }
 \examples{
-cog = 29019 
+cog <- 29019
 epsg_from_cog(cog)
 }

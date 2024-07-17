@@ -23,7 +23,7 @@ vector of city codes (for cities with at least 2 vote offices)
 }
 }
 \examples{
-var_cog = "code_commune_ref"
-var_bv = "id_brut_bv_reu"
-mapvotr:::fget_multiBV(mapvotr::addresses_sample,"code_commune_ref","id_brut_bv_reu")
+var_cog <- "code_commune_ref"
+var_bv <- "id_brut_bv_reu"
+mapvotr:::fget_multiBV(mapvotr::addresses_sample, "code_commune_ref", "id_brut_bv_reu")
 }

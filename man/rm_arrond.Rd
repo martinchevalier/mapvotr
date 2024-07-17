@@ -19,7 +19,7 @@ Remplace les cog d'arrondissements communaux par les cog communaux pour Paris, L
 Replace "arrondissements" codes by city codes for Paris, Lyon and Marseille
 }
 \examples{
-tab <- data.frame(id=1:5,code_commune_ref=c("75118","75000","35000","69382",NA))
+tab <- data.frame(id = 1:5, code_commune_ref = c("75118", "75000", "35000", "69382", NA))
 var_cog <- "code_commune_ref"
-mapvotr:::rm_arrond(tab,var_cog)
+mapvotr:::rm_arrond(tab, var_cog)
 }

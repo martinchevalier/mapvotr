@@ -73,7 +73,7 @@ La ville cible est désignée par son code officiel géographique ou « code Ins
 
 * Partition de la commune en polygones de Voronoï à partir du nuage de points géolocalisés (grâce à la fonction interne `voronoi_com`)
 * Association d'un bureau de vote (BV) à chaque Voronoï (grâce à la fonction interne `decouplage_ptsBv`) :
-  * Des hypothèses sont nécessaires quand on trouve plusieurs adresses sur un même point géographique, et que ces adresses sont reliés à plusieurs BV différents : on considère par ordre de priorité le nombre d'adresses associées à chaque BV, puis la qualité de géolocalisation de ces adresses.
+  * Des hypothèses sont nécessaires quand on trouve plusieurs adresses sur un même point géographique, et que ces adresses sont reliées à plusieurs BV différents : on considère par ordre de priorité le nombre d'adresses associées à chaque BV, puis la qualité de géolocalisation de ces adresses.
 
 * On regroupe géographiquement (union) les polygones de Voronoï par bureau de vote.
 

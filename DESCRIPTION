@@ -1,7 +1,7 @@
 Package: mapvotr
 Type: Package
 Title: Create vote office contours
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Julien", "PRAMIL", , "julien.pramil@insee.fr", role = c("aut", "cre")),
     person(, "Institut national de la statistique et des études économiques", role = "cph")
@@ -10,7 +10,7 @@ Description: Create and map easily approximate vote office contours using REU ad
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Language: en, fr
 Suggests: 
     knitr,

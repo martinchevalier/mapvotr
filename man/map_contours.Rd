@@ -38,12 +38,12 @@ dynamic map (leaflet style)
 \examples{
 \dontrun{
 cog <- city_code
-sfelecteurs=lres$addresses
-contours_bv=lcontours$contours_simplified
-var_cog = "code_commune_ref"
-var_score="geo_score"
-var_code_bv="id_brut_bv_reu"
-palettecouleurs="Paired"
-map_contours(cog,sfelecteurs,contours_bv)
+sfelecteurs <- lres$addresses
+contours_bv <- lcontours$contours_simplified
+var_cog <- "code_commune_ref"
+var_score <- "geo_score"
+var_code_bv <- "id_brut_bv_reu"
+palettecouleurs <- "Paired"
+map_contours(cog, sfelecteurs, contours_bv)
 }
 }
