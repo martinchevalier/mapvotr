@@ -1,4 +1,4 @@
-# mapvotr 0.1.0
+# mapvotr 0.1.1
 
 * Debug `map_contours`
 
